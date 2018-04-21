@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { Browerrouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Home from '../home/Home';
 
 export default class App extends PureComponent {
@@ -9,7 +9,7 @@ export default class App extends PureComponent {
         <div>
           <main>
             <Switch>
-              <Route exact patch="/" component={Home}/>
+              <Route exact path="/" component={Home}/>
               <Redirect to="/"/>
             </Switch>
           </main>

@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-// import { connect } from 'react-redux';
+// import { connenpct } from 'react-redux';
 
 export default class Home extends PureComponent{
 
