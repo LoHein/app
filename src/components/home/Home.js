@@ -1,16 +1,23 @@
 import React, { PureComponent } from 'react';
-// import { connenpct } from 'react-redux';
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
-export default class Home extends PureComponent{
+class Home extends PureComponent{
+ 
 
   render(){
+   
     return (
-      <div>home</div>
+      <section>
+        <div>home</div>
+        <button onClick={this.handleToggle}>Add Studio</button>
+        <Link to='/studios'>Add studio</Link>
+      </section>
     );
   }
 }
 
-// export default connect(
-//   null,
-//   null
-// )(Home);
+export default connect(
+  null,
+  null
+)(Home);
