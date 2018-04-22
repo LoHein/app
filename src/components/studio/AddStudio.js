@@ -9,11 +9,11 @@ class AddStudio extends PureComponent {
     city: '',
     state: '',
     country: ''
-  }
+  };
 
   handleChange = ({ target }) => {
     this.setState({ [target.name] : target.value });
-  }
+  };
 
   handleSubmit = (event) => {
     event.preventDefault();
