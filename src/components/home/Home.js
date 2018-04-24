@@ -10,7 +10,6 @@ class Home extends PureComponent{
     return (
       <section>
         <div>home</div>
-        <button onClick={this.handleToggle}>Add Studio</button>
         <Link to='/studios'>Add studio</Link>
       </section>
     );
